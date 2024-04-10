@@ -1,0 +1,109 @@
+body {
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: cover;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+}
+
+.logo a img{
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+    margin: 30px 7px;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.secao-principal {
+    display: flex;
+}
+
+section .texto {
+    color: white;
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+section .texto p {
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+.btn-register {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin: 15px 0px;
+    color: hsl(257, 40%, 49%);
+    width: 200px;
+}
+
+button:hover {
+    color: white;
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.social li a{
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+    height: 35px;
+    width: 35px;
+    text-decoration: none;
+    justify-content: center;
+}
+.social li a:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 768px) {
+    body{
+        width: 320px;
+        margin: 30px auto;
+        background-image: url(../images/bg-mobile.svg);
+    }
+    img {
+        max-width: 100%;
+    }
+    .secao-principal {
+        flex-direction: column;
+    }
+    .texto {
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .social {
+        justify-content: center;
+        margin-left: 20px;
+    }
+}
